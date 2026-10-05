@@ -1,0 +1,74 @@
+[
+  {
+    "id": "role-admin",
+    "name": "Administrator",
+    "description": "Full access to all billing, financial, inventory, user, and permission settings",
+    "isSystem": true,
+    "permissions": [
+      "*"
+    ]
+  },
+  {
+    "id": "role-manager",
+    "name": "Billing Manager",
+    "description": "Can manage all invoices, inventory products, view reports and restore trash items",
+    "isSystem": false,
+    "permissions": [
+      "invoices.view",
+      "invoices.create",
+      "invoices.edit",
+      "invoices.delete",
+      "invoices.print_pdf",
+      "products.view",
+      "products.create",
+      "products.edit",
+      "products.delete",
+      "users.view",
+      "settings.view",
+      "companies.view",
+      "companies.manage",
+      "reports.view"
+    ]
+  },
+  {
+    "id": "role-sales",
+    "name": "Sales / Billing Staff",
+    "description": "Can generate bills, print PDF, and view product catalog",
+    "isSystem": false,
+    "permissions": [
+      "invoices.view",
+      "invoices.create",
+      "invoices.print_pdf",
+      "products.view",
+      "companies.view",
+      "reports.view"
+    ]
+  },
+  {
+    "id": "role-inventory",
+    "name": "Inventory Officer",
+    "description": "Responsible for managing products catalog and stock pricing",
+    "isSystem": false,
+    "permissions": [
+      "products.view",
+      "products.create",
+      "products.edit",
+      "products.delete",
+      "invoices.view",
+      "trash.view",
+      "trash.restore"
+    ]
+  },
+  {
+    "id": "role-viewer",
+    "name": "Account Auditor / Viewer",
+    "description": "Read-only access to view and print invoices and products without modification rights",
+    "isSystem": false,
+    "permissions": [
+      "invoices.view",
+      "invoices.print_pdf",
+      "products.view",
+      "reports.view"
+    ]
+  }
+]

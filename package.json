@@ -1,0 +1,25 @@
+{
+  "name": "sec-gadgets",
+  "version": "1.0.0",
+  "description": "Master Technology - Modern Online Billing, Invoicing & POS Management System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "health": "node -e \"fetch('http://localhost:3000/health').then(r=>r.json()).then(console.log)\""
+  },
+  "keywords": [
+    "billing",
+    "invoicing",
+    "pos",
+    "accounting",
+    "inventory",
+    "sec-gadgets"
+  ],
+  "author": "Master Technology",
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

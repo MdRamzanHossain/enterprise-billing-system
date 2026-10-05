@@ -1,0 +1,20 @@
+[Unit]
+Description=Master Technology Online Billing & POS Management System
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/var/www/sec-gadgets
+ExecStart=/usr/bin/node server.js
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=sec-gadgets-billing
+Environment=NODE_ENV=production
+Environment=PORT=3000
+Environment=HOST=127.0.0.1
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "usr-admin-01",
+    "username": "admin",
+    "name": "System Administrator",
+    "email": "admin@secgadgets.com",
+    "passwordHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+    "role": "role-admin",
+    "status": "active",
+    "createdAt": "2026-08-01T10:00:00.000Z"
+  },
+  {
+    "id": "usr-admin-02",
+    "username": "ramzan",
+    "name": "Ramzan Muhammad",
+    "email": "ramzan@secgadgets.com",
+    "passwordHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+    "role": "role-admin",
+    "status": "active",
+    "createdAt": "2026-08-15T09:15:00.000Z"
+  },
+  {
+    "id": "usr-sales-01",
+    "username": "tarek",
+    "name": "Tarek Ahmed",
+    "email": "tarek@secgadgets.com",
+    "passwordHash": "96d94025a84b3735ab107de3fafbb406f9f75731ceddb3585cf0f5d0f1359fdd",
+    "role": "role-sales",
+    "status": "active",
+    "createdAt": "2026-09-01T08:30:00.000Z"
+  },
+  {
+    "id": "usr-viewer-01",
+    "username": "viewer",
+    "name": "Account Auditor",
+    "email": "auditor@secgadgets.com",
+    "passwordHash": "65375049b9e4d7cad6c9ba286fdeb9394b28135a3e84136404cfccfdcc438894",
+    "role": "role-viewer",
+    "status": "active",
+    "createdAt": "2026-09-10T11:00:00.000Z"
+  }
+]

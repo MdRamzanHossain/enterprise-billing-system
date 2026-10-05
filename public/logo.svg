@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" width="100%" height="100%">
+  <!-- Icon MT Ribbon -->
+  <g transform="translate(10, 10)">
+    <!-- Cyan ribbon left -->
+    <path d="M 25 15 L 45 48 L 30 78 L 12 78 L 26 50 L 10 24 Z" fill="#0099DD"/>
+    <path d="M 45 48 L 65 15 L 78 24 L 56 60 L 45 48 Z" fill="#0284C7"/>
+    <!-- Orange ribbon right / intertwine -->
+    <path d="M 52 24 L 72 60 L 88 32 L 100 48 L 78 88 L 60 88 L 40 52 Z" fill="#E65100"/>
+    <path d="M 72 60 L 88 88 L 105 88 L 88 56 Z" fill="#F97316"/>
+    <!-- Central intersection accent -->
+    <circle cx="58" cy="52" r="5" fill="#FF8A00" opacity="0.9"/>
+  </g>
+  
+  <!-- Text Brand -->
+  <g transform="translate(130, 20)">
+    <!-- master technology -->
+    <text x="0" y="48" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="800" fill="#1e293b" letter-spacing="-0.5">
+      master technology
+    </text>
+    <!-- Tagline -->
+    <text x="5" y="76" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#475569" letter-spacing="3">
+      Better Security, Better Solution
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,93 @@
+[
+  {
+    "id": "prod-001",
+    "name": "DAHUA HAC-T1A21P-IL-A",
+    "warranty": "01 YEAR",
+    "unitPrice": 1600,
+    "category": "Camera"
+  },
+  {
+    "id": "prod-002",
+    "name": "DAHUA 8CH- 1B08 XVR",
+    "warranty": "01 YEAR",
+    "unitPrice": 4500,
+    "category": "XVR / DVR"
+  },
+  {
+    "id": "prod-003",
+    "name": "Adapter CC Camera",
+    "warranty": "06 MONTHS",
+    "unitPrice": 200,
+    "category": "Power Supply"
+  },
+  {
+    "id": "prod-004",
+    "name": "Vedio Ballun",
+    "warranty": "",
+    "unitPrice": 150,
+    "category": "Accessories"
+  },
+  {
+    "id": "prod-005",
+    "name": "Outdoot CAT-6 Cable",
+    "warranty": "",
+    "unitPrice": 30,
+    "category": "Networking"
+  },
+  {
+    "id": "prod-006",
+    "name": "HDD 500GB SATA",
+    "warranty": "01 YEAR",
+    "unitPrice": 1600,
+    "category": "Storage"
+  },
+  {
+    "id": "prod-007",
+    "name": "Adapter Dahua DVR 12V-2A",
+    "warranty": "06 MONTHS",
+    "unitPrice": 400,
+    "category": "Power Supply"
+  },
+  {
+    "id": "prod-008",
+    "name": "1TB Surveillance HDD Western Digital Purple",
+    "warranty": "02 YEARS",
+    "unitPrice": 4800,
+    "category": "Storage"
+  },
+  {
+    "id": "prod-009",
+    "name": "DAHUA HAC-B1A21P 2MP Bullet Camera",
+    "warranty": "01 YEAR",
+    "unitPrice": 1750,
+    "category": "Camera"
+  },
+  {
+    "id": "prod-010",
+    "name": "4-Port Fast Ethernet PoE Switch",
+    "warranty": "01 YEAR",
+    "unitPrice": 2200,
+    "category": "Networking"
+  },
+  {
+    "id": "prod-1791101857992-751",
+    "name": "Test CCTV Cable Pack",
+    "warranty": "01 YEAR",
+    "unitPrice": 500,
+    "category": "General"
+  },
+  {
+    "id": "prod-1791104809980-629",
+    "name": "Maxell CR1220 Battery 3V",
+    "warranty": "",
+    "unitPrice": 200,
+    "category": "General"
+  },
+  {
+    "id": "prod-1791104809980-811",
+    "name": "USB Extention - 10M",
+    "warranty": "",
+    "unitPrice": 1200,
+    "category": "General"
+  }
+]

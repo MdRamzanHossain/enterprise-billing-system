@@ -1,0 +1,34 @@
+{
+  "login": {
+    "title": "Master Technology",
+    "subtitle": "Online Billing & Management System",
+    "welcomeMessage": "Please sign in with your credentials to access your billing workspace.",
+    "buttonText": "Sign In to System",
+    "preset": "midnight",
+    "bgGradient": "from-slate-900 via-indigo-950 to-slate-900",
+    "headerGradient": "from-blue-700 via-indigo-700 to-slate-900",
+    "primaryColor": "#2563eb",
+    "primaryHover": "#1d4ed8",
+    "cardStyle": "solid",
+    "cardRadius": "rounded-2xl",
+    "showLogo": true,
+    "customLogo": "",
+    "showNotice": false,
+    "noticeText": "Notice: Authorized personnel only. All access is logged.",
+    "footerText": "© 2026 Master Technology. All rights reserved."
+  },
+  "app": {
+    "brandName": "Master Technology",
+    "brandTagline": "Billing Online System",
+    "primaryColor": "#2563eb",
+    "primaryHover": "#1d4ed8",
+    "navbarTheme": "light",
+    "accentColor": "#4f46e5",
+    "footerText": "© 2026 Master Technology. All rights reserved."
+  },
+  "invoice": {
+    "headerBg": "#1e3a8a",
+    "tableHeaderBg": "#f8fafc",
+    "accentColor": "#2563eb"
+  }
+}

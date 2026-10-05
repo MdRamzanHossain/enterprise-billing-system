@@ -1,0 +1,195 @@
+/* Billing Online System Custom & Print Stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Invoice Sheet styling - Exact standard A4 dimensions (210mm x 297mm) */
+.invoice-paper {
+  background: #ffffff;
+  width: 210mm;
+  min-height: 297mm;
+  height: 297mm;
+  padding: 12mm 16mm 12mm 16mm;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: #000000;
+  font-size: 12px;
+  line-height: 1.35;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes signatures to the very bottom of the A4 page */
+  overflow: hidden;
+  position: relative;
+}
+
+.invoice-body-content {
+  flex: 1 0 auto;
+}
+
+.invoice-header-title {
+  background-color: #d1d5db;
+  color: #111827;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 4px 0;
+  text-align: center;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+/* Unified Single Table with seamless borders */
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1.5px solid #000000;
+  font-size: 11.5px;
+  color: #000000;
+  table-layout: fixed;
+}
+
+.invoice-table th,
+.invoice-table td {
+  border: 1.5px solid #000000;
+  padding: 3.5px 6px;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.invoice-table th {
+  font-weight: 700;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 5px 6px;
+}
+
+/* Bottom Signatures positioned at very bottom of page */
+.invoice-signatures-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 15px 4mm 15px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: auto;
+}
+
+.signature-line {
+  border-top: 2px solid #000000;
+  display: inline-block;
+  min-width: 180px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 13px;
+  padding-top: 5px;
+}
+
+/* PRINT MEDIA QUERIES FOR DIRECT PRINTING & PDF EXPORT */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0mm;
+  }
+
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 210mm !important;
+    height: 297mm !important;
+  }
+
+  /* Hide entire application shell */
+  #app-sidebar,
+  #app-navbar,
+  #toast-container,
+  .no-print,
+  .modal-backdrop,
+  header,
+  footer,
+  button,
+  .print-hide {
+    display: none !important;
+  }
+
+  #invoice-print-area {
+    display: block !important;
+    position: static !important;
+    width: 210mm !important;
+    height: 297mm !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .invoice-paper {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 12mm 16mm 12mm 16mm !important;
+    width: 210mm !important;
+    height: 297mm !important;
+    min-height: 297mm !important;
+    max-height: 297mm !important;
+    page-break-after: avoid !important;
+    page-break-inside: avoid !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+  }
+
+  .invoice-table th,
+  .invoice-table td {
+    border: 1.5px solid #000000 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .invoice-header-title {
+    background-color: #d1d5db !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
+/* Glassmorphism and Modern Card Effects */
+.glassmorphism-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.dark-glass-card {
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
